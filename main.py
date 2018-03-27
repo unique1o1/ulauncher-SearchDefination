@@ -46,7 +46,7 @@ class KeywordQueryEventListener(EventListener):
                                                          res),
                                                      on_enter=CopyToClipboardAction(res)))
             else:
-                error_info = "Coundn't find defination/ synonym for that word"
+                error_info = "Coundn't find definition/ synonym for that word"
                 items = [ExtensionSmallResultItem(icon='images/error.png',
                                                   name=error_info,
                                                   on_enter=CopyToClipboardAction(error_info))]
