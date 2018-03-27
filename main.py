@@ -29,27 +29,42 @@ class KeywordQueryEventListener(EventListener):
         if arg is None:
             items = self.__help()
         else:
-            try:
-                definition = json.loads(vb.meaning(arg))
-                length = len(definition)
 
-                results = [definition[i]['text']
-                           for i in range(4 if length > 4 else length)]
+            args = arg.split(' ')
+            if args[0] == 's':
+                results = self.conv(args[1:], 1)
 
+            else:
+                results = self.conv(args[0:], 0)
+
+            if results:
                 for i, res in enumerate(results):
-
                     items.append(ExtensionResultItem(icon='images/icon.png',
                                                      name='{} #{}'.format(
                                                          arg, i+1),
                                                      description='{}'.format(
                                                          res),
                                                      on_enter=CopyToClipboardAction(res)))
-            except Exception, e:
-
+            else:
+                error_info = "Coundn't find defination for that word"
                 items = [ExtensionSmallResultItem(icon='images/error.png',
-                                                  name="Coundn't find defination for that word",
+                                                  name=error_info,
                                                   on_enter=CopyToClipboardAction(error_info))]
-        return RenderResultListAction(items)
+            return RenderResultListAction(items)
+
+    def conv(self, val, bools):
+        try:
+            if bools:
+                result = json.loads(vb.synonym(" ".join(val)))
+            else:
+                result = json.loads(vb.meaning(" ".join(val)))
+        except Exception:
+            return False
+
+        length = len(result)
+        results = [result[i]['text']
+                   for i in range(8 if length > 8 else length)]
+        return results
 
 
 if __name__ == '__main__':
