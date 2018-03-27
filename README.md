@@ -18,6 +18,8 @@ Extension for [ulauncher](https://ulauncher.io/) to Search for definitions of wo
 
 Feel free to [Open an issue](https://github.com/unique1o1/ulauncher-SearchDefinition/).
 
+**Python module used [Vocabulary](https://github.com/tasdikrahman/vocabulary)**
+
 ## License
 
 MIT © 2018 unique1o1
