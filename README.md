@@ -14,3 +14,10 @@ Extension for [ulauncher](https://ulauncher.io/) to Search for definations of wo
 
 **You can press Enter to copy the defination/synonym to your clipboard**
 
+## Contribute
+
+Feel free to [Open an issue](https://github.com/unique1o1/ulauncher-SearchDefination/).
+
+## License
+
+MIT © 2018 unique1o1
