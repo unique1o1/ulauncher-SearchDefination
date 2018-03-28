@@ -20,7 +20,7 @@ class DemoExtension(Extension):
 class KeywordQueryEventListener(EventListener):
     def __help(self):
         items = [ExtensionSmallResultItem(icon='images/info.png',
-                                          name="Type your word for its defination", on_enter=HideWindowAction())]
+                                          name="Type your word for its definition", on_enter=HideWindowAction())]
         return items
 
     def on_event(self, event, extension):
@@ -50,7 +50,7 @@ class KeywordQueryEventListener(EventListener):
                 items = [ExtensionSmallResultItem(icon='images/error.png',
                                                   name=error_info,
                                                   on_enter=CopyToClipboardAction(error_info))]
-            return RenderResultListAction(items)
+        return RenderResultListAction(items)
 
     def conv(self, val, bools):
         try:
