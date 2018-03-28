@@ -15,6 +15,21 @@
       "name": "Search Definition",
       "description": "use keyword to activate this plugin",
       "default_value": "d"
+    },
+    {
+      "id": "limit",
+      "type": "input",
+      "name": "maximum number of result",
+      "description": "result will be truncate to the maximum number",
+      "default_value": "8"
+    },
+    {
+      "id": "options",
+      "type": "input",
+      "name": "online or offline",
+      "description":
+        "locate options display on help menus, first one would be the default option;",
+      "default_value": "offline"
     }
   ]
 }
