@@ -21,7 +21,7 @@ Feel free to [Open an issue](https://github.com/unique1o1/ulauncher-SearchDefini
 * **Python module used [Vocabulary](https://github.com/tasdikrahman/vocabulary)**
 * **Offline dictionary doesn't have all words. To get most of the words use online dictionary.**
 
-*Change default_value from `offline` to `online` in manifest.json*
+*Change default_value from `online` to `offline` in manifest.json*
 ## License
 
 MIT © 2018 unique1o1
