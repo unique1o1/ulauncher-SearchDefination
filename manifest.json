@@ -6,7 +6,7 @@
   "developer_name": "Yunik Maharjan",
   "icon": "images/icon.png",
   "options": {
-    "query_debounce": 0.1
+    "query_debounce": 1
   },
   "preferences": [
     {
@@ -27,9 +27,8 @@
       "id": "options",
       "type": "input",
       "name": "online or offline",
-      "description":
-        "locate options display on help menus, first one would be the default option;",
-      "default_value": "offline"
+      "description": "locate options display on help menus, first one would be the default option;",
+      "default_value": "online "
     }
   ]
 }
