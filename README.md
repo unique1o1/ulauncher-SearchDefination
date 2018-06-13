@@ -14,6 +14,12 @@ Extension for [ulauncher](https://ulauncher.io/) to Search for definitions of wo
 
 **You can press Enter to copy the definition/synonym to your clipboard**
 
+## Installation
+
+    git clone https://github.com/unique1o1/ulauncher-SearchDefinition/
+    cp -R ulauncher-SearchDefinition ~/cache/ulauncher_cache/extensions
+    sudo pip2.7 install requests
+
 ## Contribute
 
 Feel free to [Open an issue](https://github.com/unique1o1/ulauncher-SearchDefinition/).
